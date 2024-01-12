@@ -140,6 +140,7 @@ section{
 }
 .our-experience h4{
     margin-top: 3.5rem;
+    font-size: 1.4rem;
 }
 .experience-heading{
     display: flex;
@@ -224,6 +225,7 @@ footer{
 
 
 
+
 /* small device  */
 @media screen and (max-width: 576px) {
     html{
@@ -278,5 +280,19 @@ footer{
     }
     .features{
         flex-direction: column-reverse;
+    }
+    .all-facts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .experience-heading{
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .our-sponsor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
     }
 }
