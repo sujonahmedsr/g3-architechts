@@ -1,0 +1,198 @@
+/* google font imports here  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+p{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 1rem;
+}
+
+main{
+    padding: 2rem 9rem;
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    border: 1px solid #FF900E;
+    outline: none;
+    background-color: #FF900E;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    cursor: pointer;
+    margin: 1.5rem 0;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: transparent;
+    color: #FF900E;
+}
+
+/* header section css start  */
+
+header{
+    padding: 2rem 9rem;
+    background: #ff900e1a;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav > h3{
+    color: #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-shadow: 0 4px 4px #00000040;
+}
+nav > h3 > span{
+    color: #FF900E;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    text-decoration: none;
+    margin-left: 2.3rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.banner{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner h2{
+    padding: 6rem 0 .5rem 0;
+    color: #131313;
+    font-size: 3rem;
+}
+header img{
+    width: 100%;
+}
+/* header section css end  */
+
+/* features section css start here */
+section{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.features-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.features h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.features h3 .color-1{
+    color: #727272;
+    font-weight: 500;
+}
+.features h3 .color-2{
+    color: #FF900E;
+}
+/* features section css end here */
+
+/* facts section start here  */
+.facts h3{
+    font-size: 2.5rem;
+}
+.all-facts{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.all-facts .part{
+    border: 1px solid #FF900E;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+.all-facts .part h3{
+    padding-top: 0.5rem;
+}
+/* facts section end here  */
+
+
+
+
+
+
+/* small device  */
+@media screen and (max-width: 576px) {
+    html{
+        font-size: 12px;
+    }
+    header{
+        padding: 2rem;
+    }
+    main{
+        padding: 1rem 2rem;
+    }
+    section{
+        margin-top: 1rem;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .features{
+        flex-direction: column-reverse;
+    }
+    .features-img{
+        grid-template-columns: 1fr;
+    }
+    .all-facts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* medium device  */
+@media screen and (min-width: 576px) and (max-width: 990px){
+    html{
+        font-size: 14px;
+    }
+    header{
+        padding: 2.5rem;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .features{
+        flex-direction: column-reverse;
+    }
+}
