@@ -98,7 +98,7 @@ header img{
 
 /* features section css start here */
 section{
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
 }
 .features{
@@ -125,6 +125,54 @@ section{
 }
 /* features section css end here */
 
+/* experience section start here  */
+.heading h2{
+    border-left: 5px solid #FF900E;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+}
+.our-experience{
+    padding: 0 1rem 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.our-experience h4{
+    margin-top: 3.5rem;
+}
+.experience-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.exp-img{
+    position: relative;
+    /* border: 1px solid tomato; */
+}
+.experience-heading img{
+    width: 95%;
+}
+.experience-heading div{
+    flex: 1;
+}
+.ExpBtn{
+    position: absolute;
+    border: none;
+    outline: none;
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: #FF900E;
+    color: #fff;
+    border-radius: 8px;
+    bottom: -4rem;
+    left: -4rem;
+}
+.ExpBtn span{
+    font-size: 1.5rem;
+}
+
 /* facts section start here  */
 .facts h3{
     font-size: 2.5rem;
@@ -146,7 +194,32 @@ section{
 }
 /* facts section end here  */
 
+/* sponsors sections start here  */
+.Sponsors{
+    text-align: center;
+}
+.Sponsors h3{
+    font-size: 2.5rem;
+}
+.our-sponsor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.our-sponsor img{
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.our-sponsor img:hover{
+    filter: grayscale(10%);
+}
 
+footer{
+    text-align: center;
+    padding: 2rem 0;
+}
 
 
 
@@ -178,6 +251,17 @@ section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+    .our-sponsor{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .experience-heading{
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .ExpBtn{
+        left: -1rem;
     }
 }
 
